@@ -1,17 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     text-align: center;
 }
 
-/* HEADER */
 header {
-    background: linear-gradient(to right, #333, #555);
+    background-color: #333;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
 #search-bar {
@@ -19,14 +17,12 @@ header {
     padding: 10px;
     margin-top: 10px;
     border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
-/* NAVBAR */
 nav {
     background-color: #444;
-    padding: 15px;
+    padding: 10px;
 }
 
 nav ul {
@@ -35,75 +31,65 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
 }
 
 nav ul li {
     position: relative;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
+    padding: 10px;
+    display: block;
 }
 
-nav ul li a:hover {
-    background-color: #ff6600;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    top: 40px;
 }
 
-/* HERO SECTION */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .hero {
     margin-top: 20px;
-    position: relative;
 }
 
 .hero img {
     width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
-.hero h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-/* BOTTONI */
 .btn {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 10px 20px;
     background-color: #ff6600;
     color: white;
     text-decoration: none;
-    margin-top: 15px;
-    border-radius: 8px;
-    font-size: 18px;
-    transition: 0.3s;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
-.btn:hover {
-    background-color: #cc5500;
-    transform: scale(1.1);
-}
-
-/* FOOTER */
 footer {
     background-color: #222;
     color: white;
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
-    font-size: 14px;
 }
 
 
